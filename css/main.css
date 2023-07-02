@@ -10,6 +10,18 @@
     --red-color:#f00;
     --blue-color:#00f;
 }
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue-color);
+    outline: 1px solid var(--red-color);
+    
+}
+::-webkit-scrollbar-track{
+    background: var(--main-color);
+}
 body{
     color: var(--main-color);
     min-height: 3000px;
@@ -44,7 +56,7 @@ body{
 @media (max-width:991px){
     .header .links{
         position: fixed;
-        width: 250px;
+        width: max-content;
         height: 100vh;
         background:var(--main-color);
         top:70px;
@@ -55,12 +67,11 @@ body{
         flex-direction: column !important;
         text-align: justify;
         padding: 15px ;
-       
+        border-right: 10px solid var(--blue-color);
     }
     .header .links ul li{
         padding: 15px 0 0 15px;
         margin-bottom: 5px;
-        border-right: 10px solid var(--blue-color);
     }
     .header .logo img{
         width: 50px;
@@ -72,7 +83,7 @@ body{
     justify-content: flex-end;
 }
 .header .links ul a{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     position: relative;
     padding: 0 15px;
@@ -122,9 +133,12 @@ body{
     padding: 5px 20px;
     border-radius: 5px;
 }
+.main .maindiv h1:hover,.main .maindiv p:hover{
+    transform: scale(1.02);
+}
 @media (max-width:566px) {
     .main .maindiv h1{
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 .main .maindiv h1{
@@ -151,6 +165,11 @@ body{
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 5px solid var(--red-color);
+}
+@media (max-width:566px) {
+    .about-us .content-us h2{
+        font-size: 20px;
+    }
 }
 .about-us .content-us .text-us{
     display: flex;
