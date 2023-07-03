@@ -26,6 +26,9 @@ body{
     color: var(--main-color);
     min-height: 3000px;
 }
+hr{
+    background: var(--blue-color);
+}
 /* my frame work */
 .d-center{
     display: flex;
@@ -157,14 +160,15 @@ body{
 /* ///////////////////////////////////////// */
 /* section about-us */
 
-.about-us .content-us,.our-services .content-services{
+.about-us .content-us,.our-services .content-services,.our-works,.footer{
     color: var(--blue-color);
     padding: 20px 0;
 }
-.about-us .content-us h2,.our-services .content-services h2{
-    margin-bottom: 30px;
+.about-us .content-us h2,.our-services .content-services h2,.our-works h2,.footer h2{
     padding-bottom: 10px;
     border-bottom: 5px solid var(--red-color);
+    width: max-content;
+    margin: 0  auto 30px auto;
 }
 @media (max-width:566px) {
     .about-us .content-us h2{
@@ -188,7 +192,7 @@ body{
     width: 50%;
     background: #00000010;
     align-items: center;
-    padding: 25px 15px;
+    padding: 25px ;
 }
 .about-us .content-us .text-us > div:nth-child(2) p{
     width: 90%;
@@ -197,7 +201,15 @@ body{
     font-size: 18px;
     text-transform: capitalize;
     font-weight: bold;
-    text-align:justify;
+    text-align:start;
+}
+.about-us .content-us .text-us > div:nth-child(2) h2{
+    width: max-content;
+}
+.about-us .content-us .text-us > div:nth-child(2) a{
+    width: max-content;
+    font-size: 18px;
+    padding: 10px;
 }
 @media (max-width:991px) {
     .about-us .content-us .text-us{
@@ -265,13 +277,65 @@ body{
     height: 250px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    position: relative;
 }
+
+
 .our-works .content-works > div img{
     width: 100%;
     height: 100%;
-
+}
+.our-works .content-works > div:hover img{
+    transform: scale(1.5);
+    transform-origin: 50% 50%;
 }
 
+/* start section footer*/
+.footer {
+    margin: 0;
+    padding: 0;
+}
+.footer .content-whats .message{
+    width: max-content;
+    font-size: 28px;
+    color: #25D366;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1500;
+    bottom: 20px;
+    right: 10px;
+    animation: scale 1s linear infinite alternate;
+    cursor: pointer;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+.footer .content-whats .barcode{
+    width: 200px;
+    border-radius: 5px;
+    color: var(--blue-color);
+    background: var(--main-color);
+    position: fixed;
+    z-index: 1500;
+    right: 60px;
+    bottom: 65px;
+    font-weight: bold;
+}
+.footer .content-whats .barcode i{
+    color: #25D366;
+    margin: 0 5px;
+}
+.footer .content-contact{
+    width: 100%;
+    height: 400px;
+    background: #00f;
+}
 
 
 

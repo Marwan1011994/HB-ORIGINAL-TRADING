@@ -37,16 +37,16 @@
                       <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#about-us">About Us</a>
+                      <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Our Services</a>
+                      <a class="nav-link" href="#services">Our Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Our Works</a>
+                      <a class="nav-link" href="#works">Our Works</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link pe-0" href="#">Contact Us</a>
+                      <a class="nav-link pe-0" href="#contact">Contact Us</a>
                     </li>
                   </ul>
             </div>
@@ -70,11 +70,12 @@
 
     <!-- start section about us -->
 
-    <section class="about-us container-fluid" id="about-us">
+    <section class="about-us container-fluid">
+        <hr>
         <div class="content-us d-center flex-column">
-            <h2>About HB ORIGINAL TRADING </h2>
+            <h2 id="about">About HB ORIGINAL TRADING </h2>
             <div class="text-us container">
-                <div class="shadow container">
+                <div class="shadow">
                                         <!-- Carousel -->
                     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -112,13 +113,11 @@
                     </div>
                 </div>
                 <div class="d-flex flex-column shadow">
-                    <h4>Our Company</h4>
+                    <h2>Our Company</h2>
                     <p>Specialized in CIJ TIJ DOD Printers,
                         experience in the coding industry, and
                         We Work For The Best.<br>
                         always strives to provide the highest levels of service to its customers, as we believe that the continuous development of our services is the best way to maintain the trust of our valued customers.
-                    </p>
-                    <p> 
                     </p>
                     <a href="#" class="btn btn-primary">Contact Us</a>
                 </div>
@@ -129,8 +128,9 @@
     <!-- start section our-services -->
 
     <section class="our-services container-fluid" id="our-services">
+        <hr>
         <div class="content-services d-center flex-column container">
-            <h2>Our Services</h2>
+            <h2 id="services">Our Services</h2>
             <div class="info-comp">
                <div>
                 <svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hexagon" viewBox="0 0 16 16"> <path d="M14 4.577v6.846L8 15l-6-3.577V4.577L8 1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z" fill="#0000ff50"></path> </svg>
@@ -180,10 +180,11 @@
 
     <!-- Start section our-Works-->
     <section class="our-works container-fluid">
+        <hr>
+        <h2 id="works">Our Works</h2>
         <div class="content-works container">
             <div>
                 <img src="images/product3.png" alt="HB ORIGINAL TRADING">
-                <img src="" alt="">
             </div>
             <div>
                 <img src="images/product4.png" alt="HB ORIGINAL TRADING">
@@ -230,6 +231,31 @@
         </div>
     </section>
     <!-- End section our-Works-->
+
+
+
+
+    <!-- start footer-->
+    
+    <footer class="footer container-fluid">
+        <hr>
+        <h2 id="contact">Contact Us</h2>
+        <div class="content-whats container">
+            <div class="message">
+                <i class="fa-brands fa-square-whatsapp fa-2xl owhats" onclick="showwhats()"></i>
+                <i class="fa-solid fa-rectangle-xmark fa-2xl cwhats" hidden onclick="hidewhats()"></i>
+            </div>
+            <div class="barcode shadow" hidden>
+                <img src="images/QR.png" alt="barcode">
+                <p><i class="fa-brands fa-square-whatsapp fa-xl"></i>+201014009452</p>
+            </div>
+        </div>
+        <div class="content-contact">
+
+        </div>
+    </footer>
+
+    <!-- End footer-->
     
 
     

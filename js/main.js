@@ -14,3 +14,18 @@ function closemenue(){
     icon1.removeAttribute("hidden")
 }
 ///////////////////////////////
+
+let barcode = document.querySelector(".barcode")
+let cwhats = document.querySelector(".cwhats")
+let owhats = document.querySelector(".owhats")
+
+function showwhats(){
+    barcode.removeAttribute("hidden")
+    cwhats.removeAttribute("hidden")
+    owhats.setAttribute("hidden", "")
+}
+function hidewhats(){
+    barcode.setAttribute("hidden", "")
+    cwhats.setAttribute("hidden", "")
+    owhats.removeAttribute("hidden")
+}
